@@ -10,7 +10,6 @@ public class Main {
     public static void main(String[] args) {
 
         // xml based autowiring
-
         ApplicationContext context = new ClassPathXmlApplicationContext("/in/sp/resource/ApplicationConfig.xml");
         Student std = (Student) context.getBean("student");
         System.out.println(std);
